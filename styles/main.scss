@@ -9,6 +9,8 @@ main {
   align-items: center;
   justify-content: center;
 
+  font-size: 24px;
+
   gap: 24px;
 
   height: 100%;
@@ -22,15 +24,15 @@ main {
 
   h1 {
     font-weight: bold;
-    font-size: 64px;
+    font-size: 4em;
     line-height: 94%;
     letter-spacing: -0.02em;
   }
 
   p {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 1em;
+    line-height: 120%;
 
     a {
       text-decoration: underline;
@@ -53,7 +55,7 @@ main {
     }
 
     &:nth-child(2) {
-      max-width: 348px;
+      padding: 0 4em;
 
       display: grid;
       grid-auto-flow: row;
@@ -62,15 +64,23 @@ main {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   main {
     grid-template-columns: repeat(4, 1fr);
+
+    font-size: 16px;
 
     section {
       &:nth-child(1) {
         display: block;
 
         grid-column: 2 / 3;
+      }
+
+      &:nth-child(2) {
+        max-width: 348px;
+
+        padding: 0;
       }
     }
   }
