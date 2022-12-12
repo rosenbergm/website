@@ -19,15 +19,14 @@ body {
   background: #F1B8EC;
 
   display: grid;
-  place-items: center;
+  align-items: center;
 
-  grid-template-columns: 1fr Min(calc(40ch), calc(100% - 2rem)) 1fr;
-  gap: 1.5rem;
+  grid-template-columns: 1fr Min(calc(40ch), calc(100%)) 1fr;
 }
 
 main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 1.5rem;
 
@@ -53,13 +52,32 @@ main {
   h2 {
     margin: 0;
     line-height: 0;
+
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    letter-spacing: -0.02em;
+
+    font-family: 'Fugaz One', cursive;
+  }
+
+  h3 {
+    margin: 0;
+    line-height: 0;
+
+    font-weight: bolder;
+    font-size: 1.1rem;
+    line-height: 1.1em;
+    letter-spacing: -0.02em;
+
+    font-family: 'Work Sans', sans-serif;
   }
 
   p {
     font-weight: 500;
     font-size: 1rem;
     letter-spacing: -0.01em;
-    line-height: 95%;
+    line-height: 1.2em;
 
     a {
       text-decoration: underline;
@@ -79,6 +97,36 @@ main {
   section {
     display: grid;
     grid-auto-flow: row;
-    gap: 24px;
+    gap: 1.5rem;
+
+    width: 100%;
+
+    &.small {
+      gap: 1rem;
+    }
   }
+}
+
+article {
+  p {
+    margin-bottom: 0.5rem;
+    text-align: justify;
+  }
+
+  h2 {
+    margin: 1rem 0 0.6rem;
+  }
+
+  h3 {
+    margin: 1rem 0 0.6rem;
+  }
+}
+
+ul {
+  margin: 0 0 0 1rem;
+  padding: 0;
+}
+
+time {
+  font-family: 'Courier New', Courier, monospace;
 }
