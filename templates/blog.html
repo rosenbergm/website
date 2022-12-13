@@ -11,7 +11,7 @@
   <section>
     <ul>
       {% for page in section.pages %}
-      <li><a href="{{ page.permalink | safe }}">[<time datetime="{{ page.date }}">{{ page.date }}</time>]&nbsp;{{
+      <li><a href="{{ page.permalink | safe }}"><time datetime="{{ page.date }}">{{ page.date }}</time>&nbsp;{{
           page.title }}</a></li>
       {% endfor %}
     </ul>

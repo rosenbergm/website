@@ -79,12 +79,6 @@ main {
     letter-spacing: -0.01em;
     line-height: 1.2em;
 
-    a {
-      text-decoration: underline;
-      text-decoration-style: dashed;
-
-      color: #000000BB;
-    }
   }
 
   img#me {
@@ -105,6 +99,13 @@ main {
       gap: 1rem;
     }
   }
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+
+  color: #000000BB;
 }
 
 article {
@@ -128,5 +129,6 @@ ul {
 }
 
 time {
+  opacity: 0.5;
   font-family: 'Courier New', Courier, monospace;
 }
