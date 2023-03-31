@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem 2rem;
   margin: 0;
 
   min-height: 100%;
@@ -23,6 +23,13 @@ body {
 
   grid-template-columns: 1fr Min(calc(40ch), calc(100%)) 1fr;
 }
+
+@media screen and (min-width: 40rem) {
+  body {
+    padding: 2rem 1rem;
+  }
+}
+
 
 main {
   display: flex;
@@ -131,4 +138,10 @@ ul {
 time {
   opacity: 0.5;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.pride {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
