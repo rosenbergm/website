@@ -22,11 +22,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://marrrt.in" />
   <meta property="og:image" content="https://assets.marrrt.in/og.png" />
-
-  <script defer data-domain="marrrt.in" src="https://analytics.marrrt.in/js/plausible.js"></script>
 </head>
 
-<body>
+<body {% if current_path=="/" %}class="big" {% endif %}>
   {% block content %} {% endblock %}
 </body>
 

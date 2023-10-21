@@ -24,16 +24,9 @@ body {
   grid-template-columns: 1fr Min(calc(40ch), calc(100%)) 1fr;
 }
 
-@media screen and (min-width: 40rem) {
-  body {
-    padding: 2rem 1rem;
-  }
-}
-
-
 main {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   flex-direction: column;
   gap: 1.5rem;
 
@@ -96,8 +89,8 @@ main {
   }
 
   section {
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 
     width: 100%;
@@ -105,6 +98,52 @@ main {
     &.small {
       gap: 1rem;
     }
+  }
+}
+
+main.col {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 20rem) {
+  main {
+    flex-direction: column;
+  }
+
+  body.big {
+    grid-template-columns: 1fr Min(calc(40ch), calc(100%)) 1fr;
+  }
+}
+
+@media screen and (min-width: 40ch) {
+  body.big {
+    grid-template-columns: 1fr Min(calc(40ch), calc(100%)) 1fr;
+  }
+}
+
+
+@media screen and (min-width: 80ch) {
+  body {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr Min(calc(40ch), calc(100%)) 1fr;
+  }
+
+  body.big {
+    grid-template-columns: 1fr Min(calc(80ch), calc(100%)) 1fr;
+  }
+
+  main {
+    flex-direction: row;
+  }
+}
+
+.links {
+  display: flex-wrap;
+  flex-direction: row;
+  gap: 1rem;
+
+  a {
+    margin-right: 1rem;
   }
 }
 
