@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="col">
+  <section class="small">
+    <a href="/teaching">← back</a>
+    <h1 class="title">
+      {{ section.title }}
+    </h1>
+  </section>
+  <section>
+    <ul>
+      {% for page in section.pages %}
+      <li>
+        <time datetime="{{ page.date }}">{{ page.date }}</time>&nbsp;
+        <a href="{{ page.permalink | safe }}">
+          Lekce {{ page.extra.lesson }} — {{ page.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section>
+    {{ section.content | safe }}
+  </section>
+</main>
+{% endblock content %}
