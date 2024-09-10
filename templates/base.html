@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>martin rosenberg — software connoisseur</title>
+  <title>{% block title %} {% endblock %}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,17 +11,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/style.css">
 
   <meta name="description"
-    content="hey, my name is martin, and i am a developer/generalist/software connoisseur based in prague, the capital of the czech Republic. find more info about me on my github page." />
-  <meta property="og:title" content="martin rosenberg – software connoisseur" />
+    content="hey, my name is martin, and i am a developer/generalist/software connoisseur based in prague, the capital of the czech republic. find more info about me on my github page." />
+  <meta property="og:title" content="martin rosenberg" />
   <meta property="og:description"
-    content="hey, my name is martin, and i am a developer/generalist/software connoisseur based in prague, the capital of the czech Republic. find more info about me on my github page." />
+    content="hey, my name is martin, and i am a developer/generalist/software connoisseur based in prague, the capital of the czech republic. find more info about me on my github page." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://marrrt.in" />
-  <meta property="og:image" content="https://assets.marrrt.in/og.png" />
+  {# <meta property="og:image" content="https://assets.marrrt.in/og.png" /> #}
 </head>
 
 <body {% if current_path=="/" %}class="big" {% endif %}>

@@ -28,22 +28,27 @@ sečteno musíte splnit následující:
 
 ### kalendář důležitých událostí
 
-| Datum     | Událost |
-|-----------|---------|
-| 2. září   | Začátek školního roku |
-| 1. listopadu | Schválené téma maturitní práce |
-| začátek dubna | Odevzdání maturitní práce |
-| konec dubna | Zpracování a rozeslání posudků |
-| koncem května | Maturitní zkouška |
-
+| Datum         | Událost                        |
+| ------------- | ------------------------------ |
+| 2. září       | Začátek školního roku          |
+| 1. listopadu  | Schválené téma maturitní práce |
+| začátek dubna | Odevzdání maturitní práce      |
+| konec dubna   | Zpracování a rozeslání posudků |
+| koncem května | Maturitní zkouška              |
 
 ## maturita
+
+upozornění: **v době maturitních zkoušek** jsou tyto informace neoficiálního informativního charakteru. vždy konzultujte [školní web](https://www.alej.cz/studium/maturita/).
 
 no, tohle je téma samo o sobě. hodně se tady toho objeví, až bude čas. zatím se ale **musíte** soustředit na dvě věci — **výběr témata maturitní práce** a **opakování témat ze semináře PgU**.
 
 téma mi odevzdejte do **1. listopadu** a to po konzultaci. prosím vás, promyslete to a pokud si nebudete čímkoliv jisti (náročností tématu, nejistotou, apod.), napište mi.
 
-předběžně, ale opravdu **předběžně** (protože si nejsem jistý, jestli jsou materiály finální), se můžete podívat na [seznam otázek](https://www.alej.cz/wp-content/uploads/2023/09/Maturitni_temata_Informatika_2023_2024.pdf) a [materiály](https://pg.alej.cz/materialy.pdf) k ústní zkoušce.
+předběžné materiály k maturitní zkoušce:
+
+- [seznam maturitních otázek](/t/maturitni-otazky.pdf)
+- [přílohy k maturitním otázkám](/t/prilohy.pdf)
+- [zadání maturitní práce](/t/zadani-maturitni-prace.pdf)
 
 ### finální otázky
 

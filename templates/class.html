@@ -1,17 +1,14 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {%block title%}{{ section.title }} - martin
+rosenberg{%endblock%} {% block content %}
 <main class="col">
   <section class="small">
     <a href="/teaching">← back</a>
-    <h1 class="title">
-      {{ section.title }}
-    </h1>
+    <h1 class="title">{{ section.title }}</h1>
   </section>
   <section>
     <ul>
       {% for page in section.pages %}
-      <li>
+      <li class="pagelink">
         <time datetime="{{ page.date }}">{{ page.date }}</time>&nbsp;
         <a href="{{ page.permalink | safe }}">
           Lekce {{ page.extra.lesson }} — {{ page.title }}
@@ -20,8 +17,6 @@
       {% endfor %}
     </ul>
   </section>
-  <section>
-    {{ section.content | safe }}
-  </section>
+  <section>{{ section.content | safe }}</section>
 </main>
 {% endblock content %}
